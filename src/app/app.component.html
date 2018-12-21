@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="wrapper">
+    <div [ngStyle]="{'color': 'blue', 'background-color': 'blue', 'border': solid, 'height': bar.one }" class="animation"></div>
+    <div [ngStyle]="{'color': 'red', 'background-color': 'red', 'border': solid, 'height': bar.two }" class="animation"></div>
+    <div [ngStyle]="{'color': yellow, 'background-color': 'yellow', 'border': solid, 'height': bar.three }" class="animation"></div>
+    <div [ngStyle]="{'color': 'green', 'background-color': 'green', 'border': solid, 'height': bar.four }" class="animation"></div>
+  </div>
+  <div>
+    <input type="text" name="one" placeholder="blue" (change)="onSelect($event)">
+    <input type="text" name="two" placeholder="red" (change)="onSelect($event)">
+    <input type="text" name="three" placeholder="yellow" (change)="onSelect($event)">
+    <input type="text" name="four" placeholder="green" (change)="onSelect($event)">
+  </div>
+
+  <div class="chart2">
+    <svg style="width: 230px; height: 230px;">
+      <path fill="red" d="M115,115 L115,0 A115,115 1 0,1 115, 230 z" transform="rotate(0, 115, 115)"></path>
+      <path fill="blue" d="M115,115 L115,0 A115,115 1 0,1 196.317, 33.6827 z" transform="rotate(180, 115, 115)"></path>
+      <path fill="purple" d="M115,115 L115,0 A115,115 1 0,1 196.317, 33.6827 z" transform="rotate(225, 115, 115)"></path>
+      <path fill="yellow" d="M115,115 L115,0 A115,115 1 0,1 196.317, 33.6827 z" transform="rotate(270, 115, 115)"></path>
+      <path fill="green" d="M115,115 L115,0 A115,115 1 0,1 196.317, 33.6827 z" transform="rotate(315, 115, 115)"></path>
+    </svg>
+  </div>
+</div>

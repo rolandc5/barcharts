@@ -1,0 +1,26 @@
+.container {
+    padding: 5em;
+}
+
+.wrapper {
+    border-left: solid;
+    border-bottom: solid;
+    display: inline-grid;
+    align-items: end;
+    grid-template-columns: 50px 50px 50px 50px;
+    height: 500px;
+}
+
+.animation {
+    animation-name: hello;
+    animation-duration: 2s;
+}
+
+@keyframes hello {
+    from { height: 0em; };
+    to { height: 10em; }
+}
+
+.chart2 {
+    padding-top: 10em;
+}

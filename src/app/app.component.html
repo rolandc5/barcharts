@@ -13,12 +13,11 @@
   </div>
 
   <div class="chart2">
-    <svg style="width: 230px; height: 230px;">
-      <path fill="red" d="M115,115 L115,0 A115,115 1 0,1 115, 230 z" transform="rotate(0, 115, 115)"></path>
-      <path fill="blue" d="M115,115 L115,0 A115,115 1 0,1 196.317, 33.6827 z" transform="rotate(180, 115, 115)"></path>
-      <path fill="purple" d="M115,115 L115,0 A115,115 1 0,1 196.317, 33.6827 z" transform="rotate(225, 115, 115)"></path>
-      <path fill="yellow" d="M115,115 L115,0 A115,115 1 0,1 196.317, 33.6827 z" transform="rotate(270, 115, 115)"></path>
-      <path fill="green" d="M115,115 L115,0 A115,115 1 0,1 196.317, 33.6827 z" transform="rotate(315, 115, 115)"></path>
+    <svg viewBox="-1 -1 2 2" style="transform: rotate(-0.25turn)">
+      <path fill="red" [attr.d]="pieData[0]"></path>
+      <path fill="blue" [attr.d]="pieData[1]"></path>
+      <path fill="purple" [attr.d]="pieData[2]"></path>
+      <path fill="green" [attr.d]="pieData[3]"></path>
     </svg>
   </div>
 </div>
